@@ -6,121 +6,97 @@
 <title>Responsive Layout</title>
 <style>
 
-/********** Base styles **********/
 * {
   box-sizing: border-box;
 }
 h1 {
-<<<<<<< HEAD
   font-family: "Times New Roman", Times, serif;
   color:  black;
-  font-size: 24px;
-=======
->>>>>>> 8dbf3754c9680c1f7c754760557aed9623911a43
-  margin-bottom: 15px;
+  font-size: 175%;
+  margin-bottom: 30px;
   text-align: center;
+  font-weight: bold;
 }
 
 p {
-  border: 1px solid black;
-  background-color: #A52A2A;
-  width: 90%;
+  border: 2px solid black;
+  
   height: 150px;
-  margin-right: auto;
-  margin-left: auto;
+
   font-family: Helvetica;
-  color: white;
+  color: black;
+  word-break: break-all;
 }
 
-/* Simple Responsive Framework. */
+
+#box1{
+    background-color: powderblue;
+}
+#box2{
+    background-color: lightyellow;
+}
+#box3{
+    background-color: lightpink;
+}
+
 .row {
   width: 100%;
 }
 
+.title{
+  position: relative;
+  top: -2px;
+  right: -2px;
+  float: right;
+  font-size: 125%;
+  border: 2px solid black;
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+.text{
+  line-height: 1.1; 
+  padding: 1px 0;
+  border-left: 15px solid transparent; 
+  border-right: 15px solid transparent; 
+  border-top: 10px solid transparent;
+  display: inline-block; 
+  
+}
 /********** Large devices only **********/
-@media (min-width: 1200px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3 {
     float: left;
-    border: 1px solid green;
+    padding-left: 15px;
+    padding-right: 15px;
+
   }
   .col-lg-1 {
-    width: 8.33%;
-  }
-  .col-lg-2 {
-    width: 16.66%;
-  }
-  .col-lg-3 {
-    width: 25%;
-  }
-  .col-lg-4 {
     width: 33.33%;
   }
-  .col-lg-5 {
-    width: 41.66%;
-  }
-  .col-lg-6 {
+  .col-lg-2 {
     width: 50%;
   }
-  .col-lg-7 {
-    width: 58.33%;
-  }
-  .col-lg-8 {
-    width: 66.66%;
-  }
-  .col-lg-9 {
-    width: 74.99%;
-  }
-  .col-lg-10 {
-    width: 83.33%;
-  }
-  .col-lg-11 {
-    width: 91.66%;
-  }
-  .col-lg-12 {
+  .col-lg-3 {
     width: 100%;
   }
 }
 
 /********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3{
     float: left;
-    border: 1px solid green;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .col-md-1 {
-    width: 8.33%;
-  }
-  .col-md-2 {
-    width: 16.66%;
-  }
-  .col-md-3 {
-    width: 25%;
-  }
-  .col-md-4 {
     width: 33.33%;
   }
-  .col-md-5 {
-    width: 41.66%;
-  }
-  .col-md-6 {
+  .col-md-2 {
     width: 50%;
   }
-  .col-md-7 {
-    width: 58.33%;
-  }
-  .col-md-8 {
-    width: 66.66%;
-  }
-  .col-md-9 {
-    width: 74.99%;
-  }
-  .col-md-10 {
-    width: 83.33%;
-  }
-  .col-md-11 {
-    width: 91.66%;
-  }
-  .col-md-12 {
+  .col-md-3 {
     width: 100%;
   }
 }
@@ -128,18 +104,13 @@ p {
 </style>
 </head>
 <body>
-<h1>Our Menu</h1>
+<h1>Lyrics</h1>
 
 <div class="row">
-  <div class="col-lg-3 col-md-6"><p>Item 1</p></div>
-  <div class="col-lg-3 col-md-6"><p>Item 2</p></div>
-  <div class="col-lg-3 col-md-6"><p>Item 3</p></div>
-  <div class="col-lg-3 col-md-6"><p>Item 4</p></div>
-  <div class="col-lg-3 col-md-6"><p>Item 5</p></div>
-  <div class="col-lg-3 col-md-6"><p>Item 6</p></div>
-  <div class="col-lg-3 col-md-6"><p>Item 7</p></div>
-  <div class="col-lg-3 col-md-6"><p>Item 8</p></div>
-</div>
+  <div class="col-lg-1 col-md-2"><p id="box1"><span class="title">Verse1</span><br /><span class="text">llllldasvhisdjbfjkbjkabdvjkdsa nfbjdshvjbajkfefheubv jsdbahjfhuiebvjkxbvjewggvbjsdbl</span></p></div>
+  <div class="col-lg-1 col-md-2"><p id="box2"><span class="title">chorus</span><br /><span class="text">Watchhgdgyhgiydrtzfuiyiydrtstyerthhitertdtyftydtrfdgfdtdgfsdsafadsfsfsadfasfafafasfsafsafsafegrfhrrtijsrstestrdgdtertdme run</span></p></div>
+  <div class="col-lg-1 col-md-3"><p id="box3"><span class="title">Verse2</span><br /><span class="text">Watchhgdgyhgiydrtzfu iyiy drtst ygioyuy erthhi tertd yftyd trfdg fadgskthilwkj vnkLhiowr hfkn23i58yv 84y43dtd gfsdsa f adsfsfdg dtertdme run</span></p></div> 
+</div> 
 
 </body>
 </html>
