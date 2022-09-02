@@ -11,12 +11,10 @@ h1 {
 }
 
 p {
-  border: 2px solid black;
-  
-  height: 220px;
-
   font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", sans-serif;;
   color: black;
+  border: 2px solid black;
+  height: 220px;
   word-break: break-all;
 }
 
@@ -52,7 +50,6 @@ p {
   font-size: 125%;
   border: 2px solid black;
   padding: 5px 25px 5px 25px;
- 
   font-weight: bold;
 }
 
@@ -65,7 +62,7 @@ p {
   display: inline-block; 
   word-break: keep-all;
 }
-/********** Large devices only **********/
+/********** Large devices **********/
 @media (min-width: 992px) {
   .col-lg-1, .col-lg-2, .col-lg-3 {
     float: left;
@@ -84,7 +81,7 @@ p {
   }
 }
 
-/********** Medium devices only **********/
+/********** Medium devices **********/
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3{
     float: left;
