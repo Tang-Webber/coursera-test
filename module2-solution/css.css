@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 h1 {
-  font-family: Comic Sans MS ;
+  font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", sans-serif;;
   color:  black;
   font-size: 175%;
   margin-bottom: 20px;
@@ -15,7 +15,7 @@ p {
   
   height: 220px;
 
-  font-family: Comic Sans MS;
+  font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", sans-serif;;
   color: black;
   word-break: break-all;
 }
